@@ -1,0 +1,391 @@
+/* FONTS */
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/HelveticaNeue.otf') format('truetype'), 
+	url('/fonts/HelveticaNeue.woff') format('woff'),
+ 	url('/fonts/HelveticaNeue.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf')format('truetype'), 
+	url('/fonts/Poppins-Regular.woff') format('woff'),
+	url('/fonts/Poppins-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+/* handig */
+* {
+	margin: 0px;
+	z-index: 0;
+}
+
+.nopadding {
+	padding: 0px !important;
+}
+
+.gotobackground {
+	z-index: -5;
+}
+
+/* body */
+body {
+	margin: 0px;
+}
+
+main {
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+p, a {
+	font-family: 'Helvetica Neue', sans-serif, Arial;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:'Poppins', Helvetica, Arial;
+}
+/* header */
+header {
+	text-align: center;
+	background-color: #7070DC;
+	padding: 5vw;
+}
+
+h1 {
+	color: white;
+}
+
+h1 + p {
+	color: white;
+}
+
+/* body */
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* takenlijst */
+
+main > section > div, section + section > div{
+	padding: 1px;
+	background-color: #7070DC;
+	width: 30.5vw;
+	border-top-right-radius: 25px;
+	margin-top: 5vh;
+
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+}
+
+section + section > div, section + section > div {
+	width: 50vw;
+}
+
+h2, h3 {
+	color: white;
+	font-size: 1.5em;
+	padding-left: 0.5em;
+}
+
+hr {
+	border: 0.4px solid #7070DC;
+}
+
+hr + ul > li {
+	border: 0.5px solid #7070DC;
+	border-radius: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+	background: white;
+	box-shadow: 2px 5px 2px -5px #7070DC;
+
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+}
+
+div > h2 + p, div > h3 + p {
+	color: white;
+	padding-left: 0.4em;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+ul > li > p, ul > li > a {
+	color: black;
+	text-decoration: none;
+	padding: 4px;
+	margin: 10px;
+}
+
+ul > li > p + img + p, ul > li > a + img + p {
+	color: #8A8A8A;
+	font-size: 0.8em;
+	padding: 0px;
+	margin-left: 3px;
+}
+
+li > img {
+	width: 1em;
+}
+
+/* pop up */
+
+main > article {
+	background-color: white;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	border: 0.5px solid #8A8A8A;
+	border-radius: 25px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+	position: fixed;
+	margin-right: 4vw;
+	margin-top: 11vh;
+	z-index: 3;
+}
+
+article > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.h2popup {
+	font-family: 'Helvetica Neue', sans-serif, Arial;
+	font-size: 1em;
+	padding: 0;
+	color: black;
+	font-weight: bold;
+	z-index: 5;
+}
+article > div > a > img {
+	width: 15px;
+	padding-bottom: 1em;
+}
+
+article > div + p + div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-start;
+}
+article > div + p + div > p > a {
+	color: black;
+}
+
+article > div + p + div > img {
+	width: 60px;
+}
+
+div > div + hr + p {
+	padding: 14px;
+	color: #8A8A8A;
+	margin-bottom: 3vh;
+}
+
+
+/* Task info */
+
+.headeronbackground {
+	position: absolute;
+	width: 100vw;
+	background-color: #b4b4e7;
+	padding: 0;
+	padding-top: 2.5vh;
+}
+
+.maintaskinfocard {
+	padding: 0px;
+	margin-top: 10vh;
+	box-shadow: 0px -1px 4px rgb(132, 132, 132);
+
+}
+.headtaskinfo {
+	background-color: #7070DC;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+	align-items: center;
+}
+
+main > div > a {
+	color: white;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: center;
+}
+
+main > div > h2 {
+	margin-top: 4vh;
+	padding-left: 4vw;
+}
+
+main > div + section > div {
+	background-color: transparent;
+	border-radius: 0%;
+	
+	width: 70vw;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.8em;
+}
+
+.bodyinfocard {
+	width: 100%;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	display: flex;
+	flex-direction: column;
+}
+
+	/* Tiny menu info card */
+main > div + section > div > span > a {
+	text-decoration: none;
+	color: black;
+	padding-left: 4px;
+}
+
+.itemselected {
+	background-color: #7070DC;
+	width: 109px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+}
+
+.itemselected > a {
+	color: white;
+}
+
+main > div + section > div > span > img{
+	width: 16px;
+}
+
+	/* Subtasklist info card */
+main > div + section > div + ol {
+	list-style-type: none;
+	font-family: 'Helvetica Neue', sans-serif, Arial;
+	width: 90vw;
+	padding: 0px;
+	margin-bottom: 5vh;
+}
+
+main > div + section > div + ol > li{
+	padding: 0.3em;
+}
+
+main > div + section > div + ol > li > label > input:checked {
+	text-decoration: line-through;
+}
+	
+	/* Personal notes */
+main > div + section > section {
+	height: 142.969px;
+}
+
+main > div + section > section p {
+	font-family: 'Helvetica Neue', sans-serif, Arial;
+	color: #8A8A8A;
+	font-size: 0.9em;
+	width: 90vw;
+}
+
+main > div + section > section > p:nth-child(2) {
+	color: black;
+}
+
+	/* Infolist info card */
+main > div + section > div + ol + p, main > div + section > div + section + p {
+color: white;
+background-color: #7070DC;
+width: 29px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+border-radius: 5px;
+margin-bottom: 0.8em;
+}
+
+main > div + section > div + ol + p + ul, main > div + section > div + section + p + ul {
+list-style-image: url('img/list-style-item-info.png');
+list-style-position: outside;
+font-family: 'Helvetica Neue', sans-serif, Arial;
+width: 90vw;
+padding-left: 5vw;
+margin-bottom: 5vh;
+}
+
+main > div + section > div + ol + p + ul > li, main > div + section > div + section + p + ul > li {
+	padding: 0.3em;
+}
+main > div + section > div + ol + p + ul > li > a, main > div + section > div + section + p + ul > li > a {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: underline;
+}
+
+/* prototype */
+
+main > p {
+	text-align: center;
+}
+
+main > p + a {
+	text-align: center;
+	text-decoration: underline;
+}
+
+/* footer */
+  footer {
+	background-color: #7070DC ;
+	padding: 3vw;
+	text-align: center;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	width: calc(33.33% - 10px); /* -10px for margin between columns */
+	text-align: center;
+  }
+
+  nav :nth-child(3), nav :nth-child(6) {
+	text-decoration-line: underline;
+  }
+
+  Footer > p {
+	font-size: 0.6em;
+	opacity: 0.6;
+	color: white;
+	padding-top: 0.5em;
+  }
+  
